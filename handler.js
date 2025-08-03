@@ -814,8 +814,8 @@ module.exports = {
                 if (!('sBye' in chat)) chat.sBye = 'Selamat tinggal @user!'
                 if (!('sPromote' in chat)) chat.sPromote = ''
                 if (!('sDemote' in chat)) chat.sDemote = ''
-                if (!('delete' in chat)) chat.delete = true
-                if (!('antiLink' in chat)) chat.antiLink = true
+                if (!('delete' in chat)) chat.delete = false
+                if (!('antiLink' in chat)) chat.antiLink = false
                 if (!('antiLinknokick' in chat)) chat.antiLinknokick = false
                 if (!('antiSticker' in chat)) chat.antiSticker = false
                 if (!('antiStickernokick' in chat)) chat.antiStickernokick = false
@@ -842,7 +842,7 @@ module.exports = {
                 if (!('antibot' in chat)) chat.antibot = false
             } else global.db.data.chats[m.chat] = {
                 isBanned: false,
-                welcome: true,
+                welcome: false,
                 welcometype: 1,
                 detect: false,
                 isBannedTime: false,
@@ -858,7 +858,7 @@ module.exports = {
                 antiSticker: false, 
                 antiStickernokick: false, 
                 viewonce: false,
-                antiToxic: true,
+                antiToxic: false,
                 antilinkig: false, 
                 antilinkignokick: false, 
                 antilinkyt: false, 
