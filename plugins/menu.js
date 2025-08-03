@@ -87,16 +87,26 @@ const allTags = {
 
 const defaultMenu = {
     before: `
-Hi %name
-I am an automated system (WhatsApp Bot) that can help to do something, search and get data / information only through WhatsApp.
+ *- Bot Information -*
+┌ ◦ *Hai* *%name* ! 
+│ ◦ *Total User* : %totalreg
+└ ◦ *Runtime* : %muptime
 
-◦ *Library:* Baileys
-◦ *Function:* Assistant
+*- About Bot -*
+┌ ◦ *Creator* : *Putbotz*
+│ ◦ *Instagram put* : *whooputt*
+└ ◦ *More About Put?* : rieslark-web.vercel.app
 
-┌  ◦ Uptime : %uptime
-│  ◦ Tanggal : %date
-│  ◦ Waktu : %time
-└  ◦ Prefix Used : *[ %p ]*
+*- User Info -*
+┌ ◦ *Name* : %name
+│ ◦ *Limit* : %limit
+│ ◦ *Role* : %role
+│ ◦ *Level* : %level
+│ ◦ *Xp* : %exp / %maxexp
+└ ◦ *Total Xp* : %totalexp
+
+*Tarikh* : *%date*
+▬▭▬▭ *ALL MENU* ▬▭▬▭
 `.trimStart(),
     header: '┌  ◦ *%category*',
     body: '│  ◦ %cmd %islimit %isPremium',
